@@ -75,7 +75,7 @@ namespace Catalog.Api.Controllers
                 Price = itemDto.Price
             };
 
-            repository.Updatetem(updateItem);
+            repository.UpdateItem(updateItem);
 
             return NoContent();
         }
