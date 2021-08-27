@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Catalog.Repositories;
 
 namespace CatalogWebApiWith.NET5
 {
@@ -22,6 +23,7 @@ namespace CatalogWebApiWith.NET5
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddSingleton<IItemsRepository, InMemItemsRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
