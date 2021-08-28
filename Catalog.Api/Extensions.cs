@@ -1,5 +1,5 @@
-using Catalog.Dtos;
-using Catalog.Entities;
+using Catalog.Api.Dtos;
+using Catalog.Api.Entities;
 
 namespace Catalog
 {

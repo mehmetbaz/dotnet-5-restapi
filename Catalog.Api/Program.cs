@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace CatalogWebApiWith.NET5
+namespace  Catalog.Api
 {
     public class Program
     {
